@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-<!-- insert your AIML categories here -->
+    <!-- Introduction -->
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>My name is ChatBot. I'm here to assist you!</template>
+    </category>
 
-<category>
-	<pattern>HI</pattern>
-	<template>Hi</template>
-</category>
+    <category>
+        <pattern>WHO CREATED YOU</pattern>
+        <template>I was created by Safa for her assignment.</template>
+    </category>
 
+    <category>
+        <pattern>WHAT CAN YOU DO</pattern>
+        <template>I can answer questions, provide information, and have general conversations with you. Feel free to ask me anything!</template>
+    </category>
+
+    <!-- Conversation Starters -->
+    <category>
+        <pattern>CAN YOU TALK TO ME</pattern>
+        <template>Sure, I can chat with you! What's on your mind today?</template>
+    </category>
+
+    <category>
+        <pattern>LET'S TALK</pattern>
+        <template>Of course, I'm here to chat. What would you like to discuss?</template>
+    </category>
+    <category>
+        <pattern>What can you do</pattern>
+        <template>I Can give info on what is aiml file and how to write it</template>
+    </category>
+    <!-- AIML File Explanation -->
+    <category>
+        <pattern>WHAT IS AN AIML FILE</pattern>
+        <template>An AIML (Artificial Intelligence Markup Language) file is a set of rules that a chatbot uses to understand user input and generate responses. It consists of patterns and templates to match user queries and provide appropriate answers.</template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I WRITE AN AIML FILE</pattern>
+        <template>To write an AIML file, you can use a text editor and follow the AIML syntax. Each category should have a pattern that represents a user input and a template that contains the bot's response. You can create as many categories as needed to make your bot useful.</template>
+    </category>
+
+    <!-- Default Response -->
+    <category>
+        <pattern>*</pattern>
+        <template>I'm sorry, I don't have information on that. Please feel free to ask me something else!</template>
+    </category>
 </aiml>
