@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+    <category>
+    <pattern>HI *</pattern>
+    <template>
+        <think>
+            <set name="user_greeting"><star/></set>
+        </think>
+        <condition name="user_greeting">
+            <li value="are you">
+                <random>
+                    <li>Hi! I'm just a computer program, but I'm here to assist you. How can I help you today?</li>
+                    <li>Hello! I'm not a person, but I'm ready to assist you with any questions or tasks you have.</li>
+                </random>
+            </li>
+            <li>
+                <random>
+                    <li>Hi! How can I assist you today?</li>
+                    <li>Hello! What can I do for you?</li>
+                </random>
+            </li>
+        </condition>
+    </template>
+</category>
     <!-- Introduction -->
     <category>
+        <pattern>HI * </pattern>
+        <template>HI, HIOW CAN I ASSIST YOU?</template>
+    </category>
+    <category>
+    <category>
+        <pattern>HI </pattern>
+        <template>HI, HIOW CAN I ASSIST YOU?</template>
+    </category>
         <pattern>WHAT IS YOUR NAME</pattern>
         <template>My name is ChatBot. I'm here to assist you!</template>
     </category>
@@ -27,7 +57,7 @@
         <template>Of course, I'm here to chat. What would you like to discuss?</template>
     </category>
     <category>
-        <pattern>What can you do</pattern>
+        <pattern>WHAT CAN YOU DO</pattern>
         <template>I Can give info on what is aiml file and how to write it</template>
     </category>
     <!-- AIML File Explanation -->
